@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'ds';
+    src: url('DS-DIGIT.TTF');
+}
+
+body {
+    background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzQ5b3gzZ3FheGhmaDRjd3E3ZDNiamllbjdlZXgxNnRoZXczbmF6biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUPGcjUQcWclgK94ti/giphy.gif);
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-weight: bolder;
+    font-family: ds;
+}
+
+h1 {
+    color: #43ee0f;
+}
+
+#calculator {
+    font-family: ds;
+    max-width: 360px;
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 10px 10px 20px #43ee0f, -10px 10px 20px #43ee0f, 10px -10px 20px #43ee0f, -10px -10px 20px #43ee0f;
+}
+
+#display {
+    font-family: ds;
+    margin-top: 10px;
+    width: 95%;
+    height: 100px;
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #43ee0f;
+    background: #4e4e4e;
+    border: #fff solid 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: ds;
+    width: calc(25% - 16px);
+    height: 50px;
+    font-size: 16px;
+    margin: 10px 5px;
+    border: none;
+    background-color: #413d3d;
+    color: #43ee0f;
+    box-shadow: 5px 5px 10px #43ee0f;
+    border-radius: 20px;
+}
+
+.operator {
+    color: #2b2525;
+    background-color: #d1d1d1;
+    padding: 15px;
+}
+
+#ac {
+    color: rgb(243, 0, 0);
+}
+
+.equal {
+    width: calc(50%-12px);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform:scale(.9);
+    box-shadow: 5px 5px 10px #d1d1d1;
+}
+
+@media screen and (max-width: 600px) {
+    #calculator{
+        transform: scale(.8);
+    }
+}
+
